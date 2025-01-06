@@ -1,0 +1,346 @@
+@media screen and (max-width: 1510px)
+{
+	header .logo_img
+	{
+		width: 150px;
+	}
+
+	header .phone_mail
+	{
+		margin-right: 10px;
+	}
+
+	header .popup_butt
+	{
+		width: 200px;
+	}
+
+	header .heder_phone
+	{
+		font-size: 18px;
+	}
+
+	header .phone_mail
+	{
+		width: 170px;
+	}
+
+	header
+	{
+		padding: 20px 0;
+	}
+
+	header .sub_menu
+	{
+		padding: 30px;
+		min-width: 1000px;
+	}
+
+	header .sub_menu_box
+	{
+		margin-right: 20px;
+	}
+
+	header .sub_menu
+	{
+		left: -170px;
+	}
+
+	header .logo_img
+	{
+		transform: translateY(15px);
+	}
+
+	header .cont_button
+	{
+		transform: translateY(10px);
+	}
+}
+
+
+/***************************/
+
+@media screen and (max-width: 1200px)
+{
+	.about_comp
+	{
+		padding-top: 100px;
+	}
+
+	.about_comp .img_box
+	{
+		width: 360px;
+	}
+
+	.about_comp .text_box
+	{
+		width: calc(100% - 360px);
+	}
+
+	.about_comp .sub_title
+	{
+		margin-top: 30px;
+	}
+
+	.about_comp .numbers
+	{
+		justify-content: space-around;
+	}
+
+	.about_comp .sub_title
+	{
+		margin-bottom: 50px;
+	}
+}
+
+/*********************/
+
+@media screen and (max-width: 1500px)
+{
+	.calc_proj 
+	{
+		margin-top: 70px !important;
+	}
+}
+
+/********************/
+
+@media screen and (max-width: 1200px)
+{
+	.serv_main .serv_item
+	{
+		padding: 30px;
+	}
+
+	.serv_main .serv_title
+	{
+		font-size: 30px;
+	}
+
+	.serv_main .order_title
+	{
+		font-size: 40px;
+	}
+
+	.serv_main .order_sub_title
+	{
+		font-size: 25px;
+	}
+}
+
+/*************************/
+
+@media screen and (max-width: 1200px)
+{
+	.comand .stage_text
+	{
+		font-size: 20px;
+	}
+
+	.comand .stage_item 
+	{
+		width: calc(25% - 20px) !important;
+	}
+}
+
+/***********************/
+
+@media screen and (max-width: 1200px)
+{
+	footer .footer_box 
+	{
+		padding: 120px 30px 120px 30px;
+	}
+}
+
+@media screen and (max-width: 1600px)
+{
+	.stages .img_box img
+	{
+		width: calc(100% - 10px);
+		margin-left: 10px;
+	}
+
+	.stages .list,
+	.stages .img_box
+	{
+		width: 50%;
+	}
+}
+
+/**************************/
+
+@media screen and (max-width: 1600px)
+{
+	.form_box .sec_box
+	{
+		padding: 50px;
+	}
+
+	.form_box .img_box
+	{
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 1450px)
+{
+	.form_box .img_box
+	{
+		width: 30%;
+		margin: 0px;
+		height: auto;
+		padding-top: 50%;
+	}
+
+	.form_box #quest_form
+	{
+		width: 70%;
+		padding-left: 30px;
+	}
+
+	.form_box .half
+	{
+		width: calc(50% - 10px);
+	}
+
+	.form_box input
+	{
+		width: 100% !important;
+	}
+
+	.form_box .sec_box
+	{
+		padding: 30px;
+	}
+}
+
+/*********************************/
+
+@media screen and (max-width: 1200px)
+{
+	.ready_proj .proj_item
+	{
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 1450px)
+{
+	.phone_order .round 
+	{
+		width: 170px;
+		height: 170px;
+		margin-right: 30px;
+	}
+
+	.phone_order .univ_form
+	{
+		width: calc(100% - 200px);
+	}
+
+	.phone_order .univ_form input
+	{
+		width: 300px;
+	}
+
+	.phone_order .form_line
+	{
+		align-items: center;
+	}
+
+	.univ_form button
+	{
+		margin: 20px 0;
+	}
+
+	.phone_order .form_wrap
+	{
+		padding: 50px 20px;
+	}
+
+	.phone_order .form_wrap
+	{
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	.serv_proj .serv_item
+	{
+		width: calc(50% - 30px);
+	}
+}
+
+/*********************/
+
+@media screen and (max-width: 1400px)
+{
+	.reviews .rew_box 
+	{
+		padding: 150px 50px 50px 50px;
+	}
+
+	.reviews .slick-arrow 
+	{
+		top: -120px;
+	}
+
+	.reviews .logo
+	{
+		width: 40%;
+	}
+
+	.reviews .rew_text
+	{
+		width: 60%;
+		padding-left: 50px;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	.workers .worker_item 
+	{
+		width: calc(33.3% - 10px);
+	}
+}
+
+/*********************/
+
+@media screen and (max-width: 1400px)
+{
+	.map .cont_text
+	{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	.artic .sub_title
+	{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 1550px)
+{
+	.about_box .numb
+	{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	.about_box .text_box
+	{
+		padding-left: 20px;
+	}
+}
+
+
+
+

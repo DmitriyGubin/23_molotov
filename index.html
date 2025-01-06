@@ -1,0 +1,1074 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Молотов</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e5df13fe-7b6a-4037-9699-cddff13aa624&amp;lang=ru_RU" type="text/javascript"></script>
+
+     <!--  слик	 -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <!--  слик	 -->
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<a href="/"><img class="logo_img" src="img/logo.svg"></a>
+
+			<ul class="menu">
+				<li class="more_items">
+					<a href="#">Услуги</a>
+					<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9.28409 1L5.14204 5.14204L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+					</svg>
+
+					<div class="left_el"></div>
+
+					<div class="right_el"></div>
+
+					<div class="sub_menu hide">
+						<div class="sub_menu_box">
+							<div class="sub_menu_title">Проектирование</div>
+							<a href="#">Эскизный проект</a>
+							<a href="#">Согласование документов</a>
+							<a href="#">Авторский надзор</a>
+							<a href="#">Гражданское проектирование</a>
+							<a href="#">Строительство и проектирование торгового центра</a>
+						</div>
+
+						<div class="sub_menu_box">
+							<div class="sub_menu_title">Строительство</div>
+							<a href="#">Проектирование городских улиц и дорог</a>
+							<a href="#">Транспортное проектирование аэропортов и логистических комплексов</a>
+							<a href="#">Гражданское проектирование</a>
+							<a href="#">Строительство и проектирование торгового центра</a>
+						</div>
+
+						<div class="sub_menu_box">
+							<div class="sub_menu_title">Экспертиза</div>
+							<a href="#">Железной дороги</a>
+							<a href="#">Атомного реактора, ядра планеты</a>
+							<a href="#">Подвал, подземные коммуникации</a>
+							<a href="#">Военных, секретных сооружений, ФСБ, КГБ</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+
+			<div class="cont_button">
+				<div class="phone_mail">
+					<a class="heder_phone" href="tel:8 800 500 45 00">
+		                8 800 500 45 00
+		            </a>
+		            <a class="heder_mail" href="mailto:stroi@molotov.ru">
+		            	stroi@molotov.ru
+		            </a>
+				</div>
+				
+				<a class="popup_butt" data-fancybox="" data-src="#popup-order" href="javascript:;">
+					Заказать звонок
+				</a>
+
+			</div>
+		</div>
+		<div class="body_shade hide"></div>
+	</header>
+
+	<section class="main_ban">
+		<div class="wrap">
+			<h1 class="main_title">МОЛОТОВ</h1>
+			<div class="sub_title">создаём проекты строим объекты</div>
+		</div>
+		<img class="obj-fit fon" src="img/top_ban.webp">
+	</section>
+
+	<section class="about_comp wrap">
+		<div class="about_box">
+			<div class="text_box">
+				<h2 class="title">Компания</h2>
+				<div class="sub_title">
+					Мы с 2010 года развиваем комфортное пространство в городах России: проектируем дороги, трамвайные пути, транспортную инфраструктуру. Вставим ваш текст.
+				</div>
+
+				<div class="numbers">
+					<div class="num_item">
+						<div class="big">740+</div>
+						<div class="small">реализованных проектов</div>
+					</div>
+
+					<div class="num_item">
+						<div class="big">3000+</div>
+						<div class="small">разделов проектной документации</div>
+					</div>
+
+					<div class="num_item">
+						<div class="big">35+</div>
+						<div class="small">заключений государственной экспертизы</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="img_box">
+				<img class="obj-fit" src="img/company.png">
+			</div>
+		</div>
+		<img class="russ_img" src="img/map.png">
+	</section>
+ 
+	<section class="calc_proj wrap univ_form">
+		<h2 class="title">Расчёт стоимости проекта</h2>
+		<div class="calc_box">
+			<div class="step_1">
+				<div class="step_title">Шаг 1</div>
+				<div class="step_subt" id="select_object_box">Выберите объект</div>
+				<div class="select_box">
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">
+							здание_1
+						</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">
+							здание_2
+						</span>
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">
+							здание_3
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="right_box">
+				<div class="step_2">
+					<div class="step_title">Шаг 2</div>
+					<div class="step_subt" id="select_area_box">Выберите площадь</div>
+					<div class="var_box">
+						<div class="var_item">1500 - 5000 м2</div>
+						<div class="var_item">5000 - 25000 м2</div>
+						<div class="var_item">Свыше 25000 м2</div>
+					</div>
+				</div>
+
+				<div class="step_3">
+					<div class="step_title">Шаг 3</div>
+					<div class="step_subt">Заполните данные, чтобы мы могли с Вами связаться!</div>
+
+					<form id="call_form" class="form_box no_popup">
+						<input class="required" id="form_object_id" type="hidden" name="object">
+						<input class="required" id="form_area_id" type="hidden" name="area">
+						<div class="inp_line">
+							<div class="inp_box">
+								<input class="univ_inp name required" type="text" name="fio">
+								<label>ФИО</label>
+							</div>
+
+							<div class="inp_box">
+								<input class="univ_inp mail required" type="mail" name="mail">
+								<label>Почта</label>
+							</div>
+						</div>
+
+						<button id="order_calc">Заказать расчёт</button>
+
+						<div class="checkbox-text">
+							<div class="my-checkbox">
+								<div class="galka hide test"></div>
+							</div>
+							<span class="my-checkbox-descr">
+								Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="serv_main wrap">
+		<div class="title_butt">
+			<h2 class="title">Услуги</h2>
+			<div class="button_box">
+				<button>Проектирование</button>
+				<button>Строительство</button>
+			</div>
+		</div>
+
+		<div class="serv_box">
+			<a href="#" class="serv_item">
+				<div class="arrow_box">
+					<svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"/>
+					</svg>
+				</div>
+				<h2 class="serv_title">
+					Гражданское проектирование
+				</h2>
+				<div class="serv_text">
+					Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+				</div>
+			</a>
+
+			<a href="#" class="serv_item">
+				<div class="arrow_box">
+					<svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"/>
+					</svg>
+				</div>
+				<h2 class="serv_title">
+					Гражданское проектирование
+				</h2>
+				<div class="serv_text">
+					Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+				</div>
+			</a>
+
+			<a href="#" class="serv_item">
+				<div class="arrow_box">
+					<svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"/>
+					</svg>
+				</div>
+				<h2 class="serv_title">
+					Гражданское проектирование
+				</h2>
+				<div class="serv_text">
+					Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+				</div>
+			</a>
+
+			<a href="#" class="serv_item">
+				<div class="arrow_box">
+					<svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"/>
+					</svg>
+				</div>
+				<h2 class="serv_title">
+					Гражданское проектирование
+				</h2>
+				<div class="serv_text">
+					Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+				</div>
+			</a>
+
+			<a href="#" class="serv_item">
+				<div class="arrow_box">
+					<svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"/>
+					</svg>
+				</div>
+				<h2 class="serv_title">
+					Гражданское проектирование
+				</h2>
+				<div class="serv_text">
+					Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+				</div>
+			</a>
+
+			<div class="serv_item order">
+				<div class="order_title">Отправьте заявку</div>
+				<div class="order_sub_title">Получите расчёт вашего проекта</div>
+				<a class="popup_butt serv_order" data-fancybox="" data-src="#popup-order" href="javascript:;">
+					Отправить заявку
+				</a>
+			</div>	
+	</section>
+
+		<section class="nav_chain wrap">
+		<a href="/" class="nav_item">
+			<div>Главная</div>
+			<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.14191 2.35782L12.2841 6.49997L8.14191 10.6422M10.9985 6.49997L1 6.50004" stroke="#AFB4C6" stroke-width="1.3" stroke-linecap="round"/>
+			</svg>
+		</a>
+
+		<a href="#" class="nav_item">
+			<div>Услуги</div>
+			<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M8.14191 2.35782L12.2841 6.49997L8.14191 10.6422M10.9985 6.49997L1 6.50004" stroke="#AFB4C6" stroke-width="1.3" stroke-linecap="round"/>
+			</svg>
+		</a>
+
+		<a href="#" class="nav_item active">
+			<div>Проектирование</div>
+		</a>
+	</section>
+
+	<section class="top_ban wrap">
+		<h1 class="title">Проектирование городских улиц и дорог</h1>
+		<div class="location">г. Янчжоу, Китай. 2019 год</div>
+		<img class="top_ban_img" src="img/top_ban.png">
+	</section>
+
+	<section class="stages wrap">
+		<h2 class="title">Работаем с разными этапами проектирования</h2>
+
+		<div class="list_img">
+			<div class="list">
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Оценки материалов генплана, развития территории и влияния на среду
+					</div>
+				</div>
+
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Решений по инженерным сетям, техническим расчетам, размещению инженерных сооружений	
+					</div>
+				</div>
+
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Обоснования вложений инвестиций с помощью технико-экономических показателей
+					</div>
+				</div>
+
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Разработки эскизного проектирования, инженерных изысканий, проектной и рабочей документации, ландшафтно-планировочных решений
+					</div>
+				</div>
+
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Организации и сопровождения государственной экспертизы и согласований
+					</div>
+				</div>
+
+				<div class="list_item">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+					</svg>
+					<div class="list_text">
+						Авторского надзора за строительством, сопровождения введения в эксплуатацию
+					</div>
+				</div>
+			</div>
+			<div class="img_box">
+				<img src="img/rounds.svg">
+			</div>
+		</div>
+	</section>
+ 
+	<section class="form_box wrap">
+		<div class="sec_box">
+			<h2 class="form_title">Напишите нам</h2>
+			<div class="form_text">
+				Мы рассчитаем стоимость и сроки проектирования, ознакомимся с вашим коммерческим предложением
+			</div>
+
+			<div class="img_form">
+				<div class="img_box"></div>
+				
+				<form id="quest_form" class="univ_form no_popup">
+					<div class="inp_line">
+						<div class="inp_box half">
+							<input class="univ_inp name required" type="text" name="fio">
+							<label>ФИО</label>
+						</div>
+
+						<div class="inp_box half">
+							<input class="univ_inp phone required" type="text" name="phone">
+							<label>Телефон</label>
+						</div>
+					</div>
+
+					<div class="inp_box textarea">
+						<textarea class="univ_inp" name="quest"></textarea>
+						<label>Вопрос</label>
+					</div>
+
+					<div class="inp_line">
+						<div class="file_box univ_inp half">
+							Прикрепить файл
+						</div>
+						<button class="half" id="send_quest_form">Отправить</button>
+						<input id="file_input" name="file" type="file" class="hide">
+					</div>
+
+					<div class="checkbox-text">
+						<div class="my-checkbox">
+							<div class="galka hide"></div>
+						</div>
+						<span class="my-checkbox-descr">
+							Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="why wrap">
+		<h2 class="title">Почему мы?</h2>
+		<div class="why_box">
+
+			<div class="why_item">
+				<div class="round"></div>
+				<div class="text_box">
+					<h2 class="why_title">Сопровождаем проект</h2>
+					<div class="why_text">
+						Проектируем все разделы проектной документации согласно действующим нормативам
+					</div>
+				</div>
+			</div>
+
+			<div class="why_item">
+				<div class="round"></div>
+				<div class="text_box">
+					<h2 class="why_title">Создаем технологичные решения</h2>
+					<div class="why_text">
+						Учитываем имеющиеся и потенциальные факторы, проектируем, автоматизируем процессы работы
+					</div>
+				</div>
+			</div>
+
+			<div class="why_item">
+				<div class="round"></div>
+				<div class="text_box">
+					<h2 class="why_title">Разрабатываем интуитивно понятную инфраструктуру</h2>
+					<div class="why_text">
+						Начинаем с аудита, заканчиваем мониторингом эксплуатации объекта
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="ready_proj wrap">
+		<div class="title_line">
+			<h2 class="title">Реализованные проекты с этой услугой</h2>
+			<a class="all_proj_butt" href="#">Все проекты</a>
+		</div>
+
+		<div class="main_proj">
+			<img src="img/main_img.png">
+			<h2 class="proj_title">Комплекс смешанного назначения</h2>
+			<div class="city">г. Янчжоу, Китай</div>
+		</div>
+
+		<div class="proj_box">
+			<div class="proj_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/main_img.png">
+				</div>
+				<h2 class="proj_title">Комплекс смешанного назначения</h2>
+				<div class="city">г. Янчжоу, Китай</div>
+			</div>
+
+			<div class="proj_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/main_img.png">
+				</div>
+				<h2 class="proj_title">Комплекс смешанного назначения</h2>
+				<div class="city">г. Янчжоу, Китай</div>
+			</div>
+
+			<div class="proj_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/main_img.png">
+				</div>
+				<h2 class="proj_title">Комплекс смешанного назначения</h2>
+				<div class="city">г. Янчжоу, Китай</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="proj_head wrap">
+        <h1 class="title">KEYNE SAILER CENTRE</h1>
+        <h2 class="location">г. Янчжоу, Китай. 2019 год</h2>
+        <div class="status">начало работ над проектом</div>
+        <img class="top_img" src="img/top_img.png">
+    </section>
+
+    <section class="serv_proj wrap">
+        <h2 class="title">Услуги в проекте</h2>
+        <div class="serv_box">
+            <a href="#" class="serv_item">
+                <div class="arrow_box">
+                    <svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <h2 class="serv_title">
+                    Гражданское проектирование
+                </h2>
+                <div class="serv_text">
+                    Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+                </div>
+            </a>
+
+            <a href="#" class="serv_item">
+                <div class="arrow_box">
+                    <svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1421 1.85791L29.2842 16L15.1421 30.1422M27.9986 16L1.4285 16" stroke="#363B4E" stroke-width="2.5" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <h2 class="serv_title">
+                    Гражданское проектирование
+                </h2>
+                <div class="serv_text">
+                    Готовы выполнить все разделы проектной документации для согласования с контролирующими органами.
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="progress wrap">
+        <div class="progress_img">
+            <div class="left_box">
+                <h2 class="title">Ход работы</h2>
+                <div class="prog_item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+                    </svg>
+                    <div class="prog_text">
+                        Оценки материалов генплана, развития территории и влияния на среду
+                    </div>
+                </div>
+
+                 <div class="prog_item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+                    </svg>
+                    <div class="prog_text">
+                        Оценки материалов генплана, развития территории и влияния на среду
+                    </div>
+                </div>
+
+                 <div class="prog_item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="5" fill="#2A8FD9"/>
+                    </svg>
+                    <div class="prog_text">
+                        Оценки материалов генплана, развития территории и влияния на среду
+                    </div>
+                </div>
+            </div>
+            <img class="prog_img" src="img/prog.png">
+        </div>
+
+        <div class="about_progr">
+            The Keyne Sailer Centre is a large mixed use development in Yangzhou, China. The 200,000sqm new landmark accommodates grade A office space for the municipality government and private companies, a five-star hotel, serviced apartments, residential units, and retail areas.
+        </div>
+
+        <img src="img/img_last.png" class="below_video">
+    </section>
+
+    <section class="tech wrap">
+        <h2 class="titlee">Технические особенности проекта</h2>
+        <div class="about_tech">
+            Gaoyou’s Lake District provided the inspiration on centering on the concept of the “wave”. Bold but subtle moves helped drive toward an elegant urban and sustainable solution with a highly rational and efficient program. The tower elevation gradually rotates to open to corner entries and views, while a series of vertical aluminum fins that shield from solar heat gain to the east and west, gradually transform in section to create a dynamic visual effect of a wavelike-moving facade. The tower’s apex allows natural light to pour into a central atrium-well for guest rooms. At the hotel podium, solar energy is stored in fully photo-voltaic roof that supports the hot water demands of the office tower while the top floor ballroom can open to a super-balcony for a fully outdoor experience.
+        </div>
+        <img class="tech_img" src="img/tech_img.png">
+
+        <div class="tech_slider">
+            <div class="tech_slide">
+                <img src="img/slide_1.png">
+            </div>
+
+            <div class="tech_slide">
+                <img src="img/tech_img.png">
+            </div>
+        </div>
+
+        <img class="tech_img" src="img/below.png">
+        
+        <div class="img_box">
+            <img class="img_item" src="img/1.png">
+            <img class="img_item" src="img/2.png">
+        </div>
+    </section>
+
+    <section class="reviews wrap">
+        <h2 class="title">Что говорят клиенты</h2>
+        <div class="rew_box">
+            <div class="reviews_slider">
+                <div class="rew_slide">
+                    <img src="img/logo.png" class="logo">
+                    <div class="rew_text">
+                        Команда компании «МОЛОТОВ» проделала колоссальную работу!
+                        Благодарим за максимальный уровень профессионализма,
+                        сложные расчеты, скрупулезный подход к работе, искреннюю
+                        вовлеченность. Для нас ценно расти вместе и делать свою
+                        работу на отлично!» - делится генеральный директор
+                        Управляющей компании «Аурум Инвестмент
+                    </div>
+                </div>
+
+                 <div class="rew_slide">
+                    <img src="img/logo.png" class="logo">
+                    <div class="rew_text">
+                        Команда компании «МОЛОТОВ» проделала колоссальную работу!
+                        Благодарим за максимальный уровень профессионализма,
+                        сложные расчеты, скрупулезный подход к работе, искреннюю
+                        вовлеченность. Для нас ценно расти вместе и делать свою
+                        работу на отлично!» - делится генеральный директор
+                        Управляющей компании «Аурум Инвестмент
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="artic_box wrap">
+		<div class="title_line">
+			<h1 class="title">Статьи</h1>
+
+			<div class="buttons_box">
+				<a href="#" class="teg_ref">Проектирование</a>
+				<a href="#" class="teg_ref">Строительство</a>
+			</div>
+		</div>
+
+		<div class="all_artic">
+			<div class="artic_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/top_ban.png">
+				</div>
+
+				<div class="text_box">
+					<h2 class="artic_title">Проектируем улицы и дороги</h2>
+					<div class="city">г. Новосибирск, Россия</div>
+					<div class="tag_date">#проектирование &nbsp; 03.03.2019</div>	
+				</div>
+			</div>
+
+			<div class="artic_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/top_ban.png">
+				</div>
+
+				<div class="text_box">
+					<h2 class="artic_title">Проектируем улицы и дороги</h2>
+					<div class="city">г. Новосибирск, Россия</div>
+					<div class="tag_date">#проектирование &nbsp; 03.03.2019</div>	
+				</div>
+			</div>
+
+			<div class="artic_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/top_ban.png">
+				</div>
+
+				<div class="text_box">
+					<h2 class="artic_title">Проектируем улицы и дороги</h2>
+					<div class="city">г. Новосибирск, Россия</div>
+					<div class="tag_date">#проектирование &nbsp; 03.03.2019</div>	
+				</div>
+			</div>
+
+			<div class="artic_item">
+				<div class="img_box">
+					<img class="obj-fit" src="img/top_ban.png">
+				</div>
+
+				<div class="text_box">
+					<h2 class="artic_title">Проектируем улицы и дороги</h2>
+					<div class="city">г. Новосибирск, Россия</div>
+					<div class="tag_date">#проектирование &nbsp; 03.03.2019</div>	
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	 <section class="artic wrap">
+        <h1 class="title">Проектируем улицы и дороги</h1>
+        <img src="img/train.png">
+        <div class="artic_text">
+            <h2 class="sub_title">Проектирование железных мостов</h2>
+         
+               Благодаря чугуну и стали есть возможность конструирования мостов с минимальным расстоянием между опорами. Особое внимание специалисты уделяют расчетам по прочностным параметрам составных частей металлических сооружений. Это и поперечные сваи, и опоры, и балки с фермами. Такая работа требует первоначальной разработки схем по распределению ветровых и сейсмических нагрузок, при этом учитывается сила давления собственной массы элементов конструкции, показатели и направления результирующих воздействий и распределительная нагрузка. Проектирование и строительство мостов осуществляется с учетом сопротивлений и степени упругости для каждой детали, при этом происходит выбор необходимой площади и материалов по сечению. 
+           
+        </div>
+    </section>
+
+	<section class="phone_order wrap">
+		<div class="form_wrap">
+			<div class="round"></div>
+
+			<form class="univ_form no_popup" id="consult_form">
+				<h2 class="form_title">Заказать звонок</h2>
+				<div class="sub_title">Бесплатная консультация технического директора</div>
+				<div class="form_line">
+					<div class="inp_box">
+						<input class="univ_inp name required" type="text" name="fio">
+						<label>ФИО</label>
+					</div>
+
+					<div class="inp_box mail_box">
+						<input class="univ_inp mail required" type="text" name="mail">
+						<label>Почта</label>
+					</div>
+					<button id="order_call_form">Отправить</button>
+				</div>
+				
+				<div class="checkbox-text">
+					<div class="my-checkbox">
+						<div class="galka hide"></div>
+					</div>
+					<span class="my-checkbox-descr">
+						Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="clients wrap">
+		<h2 class="title">Клиенты</h2>
+		<div class="slider_box">
+			<div class="clients_slider">
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+
+				<div class="slide_item">
+					<img class="slide_img" src="img/luk.png">
+					<div class="comp_name">Лукоил</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="comand wrap">
+		<h2 class="title">Стать частью команды</h2>
+		<img class="comand_img" src="img/comand.png">
+		<div class="stages_box">
+			<div class="stage_item line_text">
+				<img class="stage_img" src="img/line.png">
+				<div class="stage_text">
+					Реализуем знаковые масштабные проекты
+				</div>
+			</div>
+
+			<div class="stage_item line_text">
+				<img class="stage_img" src="img/line.png">
+				<div class="stage_text">
+					Реализуем знаковые масштабные проекты
+				</div>
+			</div>
+
+			<div class="stage_item line_text">
+				<img class="stage_img" src="img/line.png">
+				<div class="stage_text">
+					Реализуем знаковые масштабные проекты
+				</div>
+			</div>
+
+			<a data-fancybox="" data-src="#popup-order" href="javascript:;" class="stage_item popup_butt" id="commad_button">
+				Стать частью команды
+			</a>
+		</div>
+	</section>
+
+	<section class="workers wrap">
+        <h1 class="title">Контакты</h1>
+        <div class="workers_box">
+            <div class="worker_item">
+                <img src="img/man.png">
+                <div class="name">Юрий Укоцкий</div>
+                <div class="position">Владелец проектного бюро</div>
+            </div>
+
+             <div class="worker_item">
+                <img src="img/man.png">
+                <div class="name">Юрий Укоцкий</div>
+                <div class="position">Владелец проектного бюро</div>
+            </div>
+
+             <div class="worker_item">
+                <img src="img/man.png">
+                <div class="name">Юрий Укоцкий</div>
+                <div class="position">Владелец проектного бюро</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_box wrap">
+        <h1 class="title">Компания</h1>
+        <div class="text_img">
+            <div class="text_box">
+                <div class="numb">740+</div>
+                <div class="descr">
+                    реализованных <br> проектов
+                </div>
+            </div>
+            <img class="about_img" src="img/1_ab.png">
+        </div>
+
+        <div class="text_img reverse">
+            <div class="text_box">
+                <div class="numb">3000+</div>
+                <div class="descr">
+                    разделов проектной <br> документации
+                </div>
+            </div>
+            <img class="about_img" src="img/2_ab.png">
+        </div>
+
+        <div class="text_img modify">
+            <div class="text_box">
+                <div class="numb">35+ создано  BIM-моделей</div>
+                <div class="descr">
+                    разделов проектной <br> документации
+                </div>
+            </div>
+            <img class="about_img" src="img/3.png">
+        </div>
+        <img class="fon_img" src="img/map_comp.png">
+
+        <div class="director">
+            <div class="text_box">
+                <div class="replic">
+                    — Мы помогаем другому бизнесу быть более эффективным, проектируя новую бизнес-среду и воплощая идеи в материальном мире с максимальной точностью
+                </div>
+                <div class="dir_name">Кирилл Войлошников</div>
+                <div class="position">генеральный директор МОЛОТОВ</div>
+            </div>
+            <img src="img/director.png" class="dir_photo">
+        </div>
+    </section>
+
+    <section class="documents wrap">
+        <h2 class="title">Лицензии</h2>
+
+        <div class="doc_box">
+            <a class="doc_item" href="img/doc.png" data-fancybox="gallery">
+                <img src="img/doc.png">
+            </a>
+
+            <a class="doc_item" href="img/doc.png" data-fancybox="gallery">
+                <img src="img/doc.png">
+            </a>
+
+            <a class="doc_item" href="img/doc.png" data-fancybox="gallery">
+                <img src="img/doc.png">
+            </a>
+
+            <a class="doc_item" href="img/doc.png" data-fancybox="gallery">
+                <img src="img/doc.png">
+            </a>
+        </div>
+    </section>
+
+    <section class="map wrap">
+        <h2 class="title">Мы на связи</h2>
+        <div class="cont_line">
+            <div class="cont_item">
+                <div class="cont_title">Телефон</div>
+                <a class="cont_text hover" href="tel:+88005004500">
+                    8 800 500 45 00
+                </a>
+            </div>
+
+            <div class="cont_item">
+                <div class="cont_title">Почта</div>
+                <a class="cont_text hover" href="mailto:stroi@molotov.ru">
+                    stroi@molotov.ru        
+                </a>
+            </div>
+
+            <div class="cont_item">
+                <div class="cont_title">Адрес в Новосибирске</div>
+                <div class="cont_text adress">ул. Ленина, 46</div>
+            </div>
+
+            <div class="cont_item">
+                <div class="cont_title">Социальные сети</div>
+                <div class="social_line cont_text">
+                    <a target="_blank" href="#">
+                        <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.2588 24C29.8362 19.4364 26.3448 15.9097 21.6723 15.4276V24H20.9284C8.09205 24 0.300189 14.9851 0 0H6.49974C6.70204 11.0094 11.6486 15.6786 15.4401 16.6296V0H21.6723V9.49697C25.3333 9.08751 29.1575 4.7683 30.4431 0H36.5708C35.592 5.86461 31.4285 10.1838 28.4788 11.967C31.4285 13.4067 36.1662 17.1778 38 24H31.2588Z" fill="#363B4E"/>
+                        </svg>
+                    </a>
+
+                    <a target="_blank" href="https://t.me/SMMRUCOM">
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.9421 0.515079C29.8335 0.208106 29.7032 0.124386 29.5077 0.0546194C29.0662 -0.105844 28.3278 0.138339 28.3278 0.138339C28.3205 0.138339 2.0424 9.29869 0.536652 10.3103C0.21089 10.5266 0.102303 10.6522 0.0516284 10.8056C-0.208981 11.5312 0.601804 11.8452 0.601804 11.8452L7.37765 13.987C7.37765 13.987 7.63102 14.0219 7.71789 13.9661C9.25983 13.0242 23.2242 4.47084 24.0277 4.1848C24.158 4.14992 24.2521 4.1848 24.2232 4.2755C23.8974 5.37083 11.7718 15.8288 11.7718 15.8288C11.7718 15.8288 11.7284 15.8847 11.6994 15.9474H11.6849L11.0551 22.4567C11.0551 22.4567 10.7873 24.452 12.8504 22.4567C14.3055 21.0474 15.7099 19.8683 16.4121 19.2962C18.7431 20.859 21.2479 22.5822 22.3265 23.4822C22.8694 23.9357 23.3255 24.0125 23.7019 23.9985C24.7299 23.9636 25.0122 22.8683 25.0122 22.8683C25.0122 22.8683 29.8045 4.17085 29.9638 1.66623C29.9783 1.42204 30 1.26158 30 1.09414C30 0.856935 29.9783 0.626705 29.9421 0.515079Z" fill="#363B4E"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="map_box">
+            
+        </div>
+    </section>
+
+	<footer class="wrap">
+		<div class="footer_box">
+			<a href="/"><img class="footer_logo" src="img/logo_footer.svg"></a>
+			<ul class="menu">
+				<li>
+					<a href="#">Услуги</a>
+					<svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.2842 2.14258L6.14214 6.28462L2.00009 2.14258" stroke="white" stroke-width="3" stroke-linecap="round"/>
+					</svg>
+				</li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="serv_boxes">
+				<div class="serv_box">
+					<div class="box_title">Проектирование</div>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+				</div>
+
+				<div class="serv_box">
+					<div class="box_title">Строительство</div>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+					<a href="#">Эскизный проект</a>
+				</div>
+			</div>
+
+			<div class="cont_line">
+				<div class="cont_item">
+					<div class="cont_title">Телефон</div>
+					<a class="cont_text" href="tel:+88005004500">
+						8 800 500 45 00
+					</a>
+				</div>
+
+				<div class="cont_item">
+					<div class="cont_title">Почта</div>
+					<a class="cont_text" href="mailto:stroi@molotov.ru">
+						stroi@molotov.ru		
+					</a>
+				</div>
+
+				<div class="cont_item">
+					<div class="cont_title">Адрес</div>
+					<div class="cont_text">г. Новосибирск, ул. Ленина, 46</div>
+				</div>
+
+				<div class="cont_item">
+					<div class="cont_title">Социальные сети</div>
+					<div class="social_line">
+						<a target="_blank" href="#">
+							<svg width="41" height="25" viewBox="0 0 41 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M33.7272 25C32.2297 20.2463 28.5546 16.5726 23.6362 16.0704V25H22.8531C9.34119 25 1.13923 15.6095 0.823242 0H7.66508C7.87802 11.4681 13.085 16.3319 17.076 17.3225V0H23.6362V9.89268C27.4899 9.46615 31.5153 4.96698 32.8686 0H39.3189C38.2885 6.10897 33.9058 10.6081 30.8009 12.4656C33.9058 13.9653 38.893 17.8935 40.8232 25H33.7272Z" fill="white"/>
+							</svg>
+						</a>
+
+						<a target="_blank" href="https://t.me/SMMRUCOM">
+							<svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.7634 0.53654C31.6512 0.216777 31.5165 0.129569 31.3146 0.0568952C30.8583 -0.110254 30.0953 0.144103 30.0953 0.144103C30.0878 0.144103 2.93372 9.68613 1.37778 10.7399C1.04116 10.9652 0.928955 11.096 0.876592 11.2559C0.607295 12.0117 1.44511 12.3387 1.44511 12.3387L8.44681 14.5698C8.44681 14.5698 8.70863 14.6061 8.7984 14.548C10.3917 13.5669 24.8215 4.65713 25.6519 4.35917C25.7865 4.32283 25.8838 4.35917 25.8538 4.45364C25.5172 5.59461 12.9875 16.4884 12.9875 16.4884C12.9875 16.4884 12.9426 16.5465 12.9126 16.6119H12.8977L12.2469 23.3923C12.2469 23.3923 11.9701 25.4708 14.102 23.3923C15.6056 21.9243 17.0568 20.6962 17.7824 20.1002C20.1911 21.7281 22.7794 23.5232 23.894 24.4607C24.455 24.933 24.9263 25.013 25.3152 24.9984C26.3775 24.9621 26.6692 23.8211 26.6692 23.8211C26.6692 23.8211 31.6213 4.34463 31.7858 1.73565C31.8008 1.4813 31.8232 1.31415 31.8232 1.13973C31.8232 0.89264 31.8008 0.652818 31.7634 0.53654Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div style="display: none;" id="popup-order">
+        <form class="univ_form popup" id="popup_form">
+            <div class="titlee">Заказать звонок</div>
+            <div class="sub_title">Бесплатная консультация технического директора</div>
+
+            <div class="input_line">
+                <div class="inp_box">
+                    <input class="univ_inp name required" type="text" name="fio">
+                    <label>ФИО</label>
+                </div>
+
+                <div class="inp_box">
+                    <input class="univ_inp phone required" type="text" name="phone">
+                    <label>Телефон</label>
+                </div>
+            </div>
+
+            <button id="send_popup">Отправить</button>
+            
+            <div class="checkbox-text">
+                <div class="my-checkbox">
+                    <div class="galka hide"></div>
+                </div>
+                <span class="my-checkbox-descr">
+                    Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                </span>
+            </div>
+        </form>
+
+        <div class="succes hide">
+            <div class="titlee">Ваша заявка отправлена!</div>
+             <div class="sub_title">В ближайшее время с Вами свяжутся.</div>
+        </div>
+	</div>
+
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html> 
